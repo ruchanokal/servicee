@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".fragments.ServisHizmetlerFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/verdiginiz_hizmetleri_seciniz" />
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkUp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/check_up"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/checkUpFiyatEditText"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fiyat_giriniz_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/white"
+            android:hint="@string/fiyat_giriniz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/lastikDegisimi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/lastik_degisimi"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/lastikDegisimiFiyatEditText"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fiyat_giriniz_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/white"
+            android:hint="@string/fiyat_giriniz"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/suspansiyonTesti"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/suspansiyon_testi"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/suspansiyonTestiFiyatEditText"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fiyat_giriniz_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/white"
+            android:hint="@string/fiyat_giriniz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/farAyari"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/far_ayari"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/farAyariFiyatEditText"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fiyat_giriniz_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/white"
+            android:hint="@string/fiyat_giriniz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/sogutmaSivisiDegisimi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/sogutma_sivisi_degisimi"
+            android:textSize="14dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/sogutmaSivisiDegisimiFiyatEditText"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fiyat_giriniz_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/white"
+            android:hint="@string/fiyat_giriniz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/yagFiltresiDegisimi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/yag_filtresi_degisimi"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/yagFiltresiDegisimiFiyatEditText"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fiyat_giriniz_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/white"
+            android:hint="@string/fiyat_giriniz"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/periyodikBakim"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/periyodik_bakim"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/periyodikBakimFiyatEditText"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fiyat_giriniz_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/white"
+            android:hint="@string/fiyat_giriniz"/>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kayitOlButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/girisyapselector"
+        android:ems="9"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_gravity="center"
+        android:text="@string/kaydi_tamamla"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+
+</LinearLayout>

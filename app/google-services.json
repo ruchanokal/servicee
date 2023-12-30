@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "362716925370",
+    "project_id": "servicee-418a1",
+    "storage_bucket": "servicee-418a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362716925370:android:a2db86de7d6a694a802183",
+        "android_client_info": {
+          "package_name": "com.servicee.servicee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362716925370-3b8ju75ia7pgjlos6nd7dth5tsp15cnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4HUCHHJBbQjXmMtjLxGy044pOrDZoO3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362716925370-3b8ju75ia7pgjlos6nd7dth5tsp15cnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

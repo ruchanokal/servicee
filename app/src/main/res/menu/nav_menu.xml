@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/randevularimFragment"
+        android:icon="@drawable/appointment_icon"
+        android:title="@string/randevularim"  />
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/home_icon"
+        android:title="@string/ana_menu" />
+    <item
+        android:id="@+id/profilimFragment"
+        android:icon="@drawable/person_icon"
+        android:title="@string/musteri_hizmetleri" />
+</menu>

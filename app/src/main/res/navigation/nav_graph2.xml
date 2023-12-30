@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.servicee.servicee.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_servisMainFragment"
+            app:destination="@id/servisMainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_cekiciCagirFragment"
+            app:destination="@id/cekiciCagirFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servisMainFragment"
+        android:name="com.servicee.servicee.fragments.ServisMainFragment"
+        android:label="fragment_servis_main"
+        tools:layout="@layout/fragment_servis_main" >
+        <action
+            android:id="@+id/action_servisMainFragment_to_servisDetailsFragment"
+            app:destination="@id/servisDetailsFragment" />
+        <argument
+            android:name="kullaniciAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cekiciCagirFragment"
+        android:name="com.servicee.servicee.fragments.CekiciCagirFragment"
+        android:label="fragment_cekici_cagir"
+        tools:layout="@layout/fragment_cekici_cagir" />
+    <fragment
+        android:id="@+id/servisDetailsFragment"
+        android:name="com.servicee.servicee.fragments.ServisDetailsFragment"
+        android:label="fragment_servis_details"
+        tools:layout="@layout/fragment_servis_details" >
+        <argument
+            android:name="servis"
+            app:argType="com.servicee.servicee.model.Servis"/>
+        <argument
+            android:name="kullaniciAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/randevularimFragment"
+        android:name="com.servicee.servicee.fragments.RandevularimFragment"
+        android:label="fragment_randevularim"
+        tools:layout="@layout/fragment_randevularim" />
+    <fragment
+        android:id="@+id/profilimFragment"
+        android:name="com.servicee.servicee.fragments.ProfilimFragment"
+        android:label="fragment_profilim"
+        tools:layout="@layout/fragment_profilim" />
+</navigation>

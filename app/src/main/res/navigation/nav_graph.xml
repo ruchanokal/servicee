@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/serviceSignInFr"
+        android:name="com.servicee.servicee.fragments.ServiceSignInFr"
+        android:label="fragment_service_sign_in"
+        tools:layout="@layout/fragment_service_sign_in" >
+        <action
+            android:id="@+id/action_serviceSignInFr_to_serviceSignUpFr"
+            app:destination="@id/serviceSignUpFr" />
+        <action
+            android:id="@+id/action_serviceSignInFr_to_forgetPasswordFr"
+            app:destination="@id/forgetPasswordFr" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.servicee.servicee.fragments.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_serviceSignInFr"
+            app:destination="@id/serviceSignInFr" />
+        <action
+            android:id="@+id/action_firstFragment_to_userSignInFr"
+            app:destination="@id/userSignInFr" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSignInFr"
+        android:name="com.servicee.servicee.fragments.UserSignInFr"
+        android:label="fragment_user_sign_in"
+        tools:layout="@layout/fragment_user_sign_in" >
+        <action
+            android:id="@+id/action_userSignInFr_to_userSignUpFr"
+            app:destination="@id/userSignUpFr" />
+        <action
+            android:id="@+id/action_userSignInFr_to_forgetPasswordFr"
+            app:destination="@id/forgetPasswordFr" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSignUpFr"
+        android:name="com.servicee.servicee.fragments.UserSignUpFr"
+        android:label="fragment_user_sign_up"
+        tools:layout="@layout/fragment_user_sign_up" />
+    <fragment
+        android:id="@+id/serviceSignUpFr"
+        android:name="com.servicee.servicee.fragments.ServiceSignUpFr"
+        android:label="fragment_service_sign_up"
+        tools:layout="@layout/fragment_service_sign_up" >
+        <action
+            android:id="@+id/action_serviceSignUpFr_to_servisHizmetlerFragment"
+            app:destination="@id/servisHizmetlerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFr"
+        android:name="com.servicee.servicee.fragments.ForgetPasswordFr"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/servisHizmetlerFragment"
+        android:name="com.servicee.servicee.fragments.ServisHizmetlerFragment"
+        android:label="fragment_servis_hizmetler"
+        tools:layout="@layout/fragment_servis_hizmetler" >
+        <argument
+            android:name="definite"
+            app:argType="integer" />
+        <argument android:name="kullaniciAdi"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+</navigation>
